@@ -25,19 +25,16 @@ public class CompteSessionBean {
       @PersistenceContext
     private EntityManager em;
 
-    public void creerCompteDeTest() {
-        creeUtilisateur("John", "Lennon", "jlennon",20000.0);
-      
-    }
-     public CompteBancaire creeUtilisateur(String firstName, String lastName, String accountNumber,double balance) {
+     public CompteBancaire creeUtilisateur(String firstName, String lastName, String accountNumber,String balance) {
         CompteBancaire u = new CompteBancaire(firstName, lastName, accountNumber, balance);
         em.persist(u);
         return u;
     }
      
-     public Collection<CompteBancaire> getAllUsers() {
+     public Collection<CompteBancaire> getCompteBancaire() {
         // Exécution d'une requête équivalente à un select *
         Query q = em.createQuery("select u from CompteBancaire u");
         return q.getResultList();
     }
+
 }

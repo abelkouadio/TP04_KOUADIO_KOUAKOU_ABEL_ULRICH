@@ -22,59 +22,51 @@ public class CompteBancaire implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-        private String firstName;
-        private String lastName;
-    private String accountNumber;
-  private double  balance;
+        private String firstName,lastName,accountNumber,balance;
 
- public CompteBancaire() {
+    public CompteBancaire() {
+    }
+    /*public CompteBancaire(String firstName, String lastName, String accountNumber, String balance) {
+    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }*/
+    public CompteBancaire(String firstName, String lastName, String accountNumber, String balance) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
     }
 
-    public CompteBancaire(String nom, String prenom, String login, double balance) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    
+
+    public String getFirstName() {
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getAccountNumber() {
         return accountNumber;
     }
 
-    public double getBalance() {
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getBalance() {
         return balance;
     }
 
-    public CompteBancaire(Long id, String firstName, String lastName, String accountNumber, double balance) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.accountNumber = accountNumber;
+    public void setBalance(String balance) {
         this.balance = balance;
     }
 
