@@ -25,7 +25,7 @@ public class CompteSessionBean {
       @PersistenceContext
     private EntityManager em;
 
-     public CompteBancaire creeUtilisateur(String firstName, String lastName, String accountNumber,String balance) {
+     public CompteBancaire creeUtilisateur(String firstName, String lastName, String accountNumber,double balance) {
         CompteBancaire u = new CompteBancaire(firstName, lastName, accountNumber, balance);
         em.persist(u);
         return u;

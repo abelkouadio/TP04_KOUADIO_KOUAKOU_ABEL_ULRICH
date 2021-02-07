@@ -3,14 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/conf/persistence.xml</file>
-            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/nbproject/build-impl.xml</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/java/CompteSessionBean/CompteSessionBean.java</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/conf/MANIFEST.MF</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/java/servlet/listeAccount.java</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/web/listAccount.jsp</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/web/newAccount.jsp</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/web/index.jsp</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/web/WEB-INF/web.xml</file>
             <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/java/CompteBancaire/CompteBancaire.java</file>
             <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/java/servlet/CompteServlet.java</file>
-            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/java/CompteSessionBean/CompteSessionBean.java</file>
-            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/web/WEB-INF/web.xml</file>
+            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/src/java/servlet/createAccount.java</file>
             <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/web/WEB-INF/glassfish-resources.xml</file>
-            <file>file:/D:/WORKSPACE/JAVA2EE/GestionB/web/index.jsp</file>
         </group>
     </open-files>
 </project-private>

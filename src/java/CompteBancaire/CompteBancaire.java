@@ -22,14 +22,15 @@ public class CompteBancaire implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-        private String firstName,lastName,accountNumber,balance;
+        private String firstName,lastName,accountNumber;
+        private double balance;
 
     public CompteBancaire() {
     }
     /*public CompteBancaire(String firstName, String lastName, String accountNumber, String balance) {
     throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }*/
-    public CompteBancaire(String firstName, String lastName, String accountNumber, String balance) {
+    public CompteBancaire(String firstName, String lastName, String accountNumber, double balance) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.accountNumber = accountNumber;
@@ -62,11 +63,11 @@ public class CompteBancaire implements Serializable {
         this.accountNumber = accountNumber;
     }
 
-    public String getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(String balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

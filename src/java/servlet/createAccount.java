@@ -49,7 +49,8 @@ public class createAccount extends HttpServlet {
                 String prenom = request.getParameter("prenom");
                 String login = request.getParameter("login");
                 String balance = request.getParameter("balance");
-                compteSessionBean.creeUtilisateur(nom, prenom, login, balance);
+                double money = Double.parseDouble(balance);
+                compteSessionBean.creeUtilisateur(nom, prenom, login, money);
                 Collection<CompteBancaire> liste = compteSessionBean.getCompteBancaire();
                 request.setAttribute("listeDesUsers", liste);
                 forwardTo = "listAccount.jsp?action=listerLesUtilisateurs";
